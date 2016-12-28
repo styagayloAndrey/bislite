@@ -24,7 +24,7 @@ body {
 		.nav li {
 			display: inline-block;
 			font-size: 13px;
-			margin-left: 10px; 
+			padding-left: 10px; 
 			font-weight: 700;
 			line-height: 20px;
 		}
@@ -32,14 +32,15 @@ body {
 				display: block;
 				color: black;
 				text-decoration: none;
-				padding: 20px 10px;
+				padding: 18px 10px 15px 10px;
+				box-sizing: border-box;
 			}
 			.nav li a:hover {
-				padding-top: 5px;
-				padding-bottom: 5px;
+				padding: 15px 10px;
 				border-top: 3px solid #2aacc8;
 				color: #2aacc8;
 				background-color: white;
+				box-sizing: border-box;
 			}
 			.nav li a:hover:after {
 				color: black;
@@ -55,11 +56,14 @@ body {
 		    font-weight: 700;
 			line-height: 20px;
 		    background-color: white;
+		    padding: 0;
 		   }
 
 					ul.subnav > li {
 					    display: block;
 					    border-bottom: 1px solid lightgray;
+					    margin: 0 6px;
+					    box-sizing: border-box;
 					}
 
 					ul.subnav > li .smiley {
@@ -69,7 +73,7 @@ body {
 					height: 2em;
 					position: relative;
 					width: 2em;
-					margin-top: 0.3em;
+
 					}
 					 
 					.smiley::after, .smiley::before {
@@ -95,17 +99,15 @@ body {
 					    right: 0;
 					}
 
-					}
 					ul.subnav > li > a {
 					    display: block;
-					    padding: 10px;
-					    text-decoration: none;
-					    
+					    text-decoration: none; 
+					    padding: 18px 0 15px 10px; 
 					}
 					ul.subnav > li > a:hover {
 					    border-top: none;
 					    color:  #2aacc8;
-					    padding: 10px;
+					    padding: 18px 0 15px 10px;
 					}
 
 						ul.nav > li:hover > ul.subnav {
@@ -139,23 +141,26 @@ span {
 
 	.foil {
 		background-color: #81e4ed;
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding: 20px 0 14px;
 		height: 100%;
 	}
 			.foil img  {
 				background-color: #dd5835;
 				display: block;
+				box-sizing: border-box;
 				margin: 0 auto;
 				max-width: 1000px;
+				padding-left: 61px; 
 			}
 			.foil ul {
 				text-align: center;
+				margin: 14px 0 0;
 			}
 
 			.foil li {
 				display: inline-block;
-				margin: 20px 10px 0;
+				margin: 0 10px 0;
+				padding: 0;
 			}
 
 			.foil a {
@@ -171,21 +176,22 @@ span {
 			}
 
 			.next {
-				padding: 30px;
+				padding: 61px 30px 52px;
 			}
 
 			.next > div  {
 				display: inline-block;
 				width: 23%;
-				margin: 5px;
+				margin: 0 5px;
 				vertical-align: top;
 			}
 
 			.next h6 {
 				font-size: 15px;
 				font-weight: 700;
-				line-height: 20px;
+				line-height: 40px;
 				text-transform: uppercase;
+				margin: 0;
 			}
 
 			.next h6:before {
@@ -226,13 +232,13 @@ span {
 			font-weight: 400;
 			line-height: 20px;
 			color: #363636;
-			padding-bottom: 20px;
 			height: 120px;
 			overflow: hidden;
 		}
 
 		.next a {
 			color: #2aacc8;
+			text-decoration: none;
 		}
 
 		.next a:before {
@@ -253,11 +259,14 @@ span {
 		max-width: 1000px;
 		margin: 0 auto;
 		position: relative;
-		padding: 15px 0;
+		padding: 20px 0 18px;
+		border-bottom: 1px solid #dfe1e5;
 	}
 
 		.latest ul {
 			float: right;
+			margin: 0;
+			line-height: 40px;
 		}
 
 			.latest li {
@@ -267,8 +276,10 @@ span {
 			background-color: #2aacc8;
 			border-radius: 50%;
 			font-weight: 700;
-			margin: 5px; 
+			padding: 5px;
+			margin-left: 11px; 
 			text-align: center;
+			line-height: 16px;
 			}
 			.latest h6:before {
 				content: "";
@@ -283,10 +294,17 @@ span {
 			.latest h6 {
 				width: 200px;
 				display: inline;
+				font-size: 15px;
+			    font-weight: 700;
+			    line-height: 40px;
+			    text-transform: uppercase;
 			}
 
 		.pic {
-			text-align: center;
+
+			padding: 20px 0 40px;
+			display: flex;
+			justify-content: space-between;
 		}
 
 		.gallery {
@@ -305,6 +323,7 @@ span {
 		bottom: 0;
 		left: 0;
 		display: none;
+		text-align: center;
 	}
 
 	.gallery:hover .other {
@@ -312,7 +331,8 @@ span {
 		height: 50%;
 	}
 	.other a {
-		vertical-align: middle;
+		/*vertical-align: middle;*/
+		line-height: 65px;
 	}
 	
 		.other a:before {
@@ -333,15 +353,7 @@ span {
 				background-image: url(img/chain.png);
 				vertical-align: middle;
 			}
-
-hr {
-	color: lightgray;
-	max-width: 1000px;
-	margin-bottom: 10px;
-	}
-	
 	.person {
-		display: inline-block;
 		max-width: 49%;
 		font-size: 0;
 		vertical-align: top;
@@ -353,6 +365,7 @@ hr {
 				font-weight: 700;
 				line-height: 20px;
 				text-transform: uppercase;
+				
 		}
 
 			.person h6:before {
@@ -363,6 +376,9 @@ hr {
 				background-image: url(img/comments.png);
 				background-repeat: no-repeat;
 				clear: both;
+		}
+		.clientsicon h6 {
+			padding-left: 10px;
 		}
 			.clientsicon h6:before {
 				content: "";
@@ -380,7 +396,8 @@ hr {
 			font-weight: 400;
 			line-height: 24px;
 			color: #363636;
-			padding: 25px 25px 0 0;
+			padding: 25px 0 0;
+			margin: 0;
 		}
 			.person p:last-child {
 				font-weight: 700;
@@ -389,6 +406,7 @@ hr {
 
 		.person div {
 			padding-top: 20px;
+			text-align: right;
 		}
 
 	.download {
@@ -397,6 +415,11 @@ hr {
 		background-color: #e8fcfe;
 		border: 1px solid #81e4ed;
 		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		box-sizing: border-box;
+		padding: 0 40px 0 31px;
 	}
 		.download p {
 			width: 607px;
@@ -405,12 +428,11 @@ hr {
 			font-size: 16px;
 			font-weight: 400;
 			line-height: 26px;
-			display: inline-block;
-			padding: 30px;
-
+			padding: 30px 0;
+			margin: 0;
 		}
 
-		.download b {
+		.download button {
 			display: inline-block;
 			color: #0d0707;
 			font-weight: 700;
@@ -420,7 +442,6 @@ hr {
 			padding: 0px;
 			width: 240px;
 			height: 60px;
-			vertical-align: middle;
 			background-color: #2aacc8;
 			background-image: linear-gradient(to top, #2aacc8 0%, #2aacc8 0%, #60cede 15%, #72dae6 50%, #81e4ed 100%);
 			border: 1px solid #2aacc8;
@@ -428,7 +449,7 @@ hr {
 			box-shadow: inset 0 2px 1px rgba(255, 255, 255, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
 		}
 
-		.download b:before {
+		.download button:before {
 				content: "";
 				display: inline-block;
 				width: 50px;
@@ -443,6 +464,7 @@ hr {
 			font-size: 18px;
 			font-weight: 700;
 			text-transform: uppercase;
+			text-decoration: none;
 		}
 
 footer {
@@ -487,8 +509,27 @@ footer {
 		text-align: left;
 	}
 
+	.b {
+		margin: 0;
+		padding: 0;
+		color: #363636;
+		font-size: 14px;
+		font-weight: 700;
+	}
+	.always {
+		margin-top: 0;
+	}
+
 	footer > div .end {
-		margin-top: 25px;
+	
+	}
+
+	footer > div > ul {
+		padding: 0;
+	}
+
+	footer > div > ul > li {
+		list-style-type: none;
 	}
 
 	footer > div > ul > li > a {
@@ -500,8 +541,10 @@ footer {
 	}
 
 	footer > div > a {
-		font-size: 70px;
-		line-height: 0.8;
+		width: 53px;
+		height: 51px;
+		display: inline-block;
+		margin: 0 8px 9px;
 	}
 
 .finish {
@@ -516,6 +559,7 @@ footer {
 		line-height: 20px;
 		text-align: left;
 		float: left;
+		margin: 0;
 	}
 
 	.finish a {
